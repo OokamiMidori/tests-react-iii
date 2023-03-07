@@ -47,6 +47,7 @@ function Pokecard(props) {
 
     useEffect(() => {
         axios.get(url).then((response) => {
+            //console.log(response)
             setPokemonDetails(response.data)
         });
     }, [url]);
